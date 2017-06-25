@@ -1,8 +1,6 @@
 #!groovy
 
 node {
-
-   stage ‘Test’
    echo "Configurando ambiente..."
    env.PATH = "${env.PATH}"
    
