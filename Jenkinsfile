@@ -2,8 +2,8 @@
 
 node {
 
+   stage ‘Test’
 
-   stage ‘Infraestructure Testing’
    echo "Obteniendo codigo..."
    checkout scm
     
