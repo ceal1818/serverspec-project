@@ -19,6 +19,7 @@ host = ENV['TARGET_HOST']
 options = Net::SSH::Config.for(host)
 
 options[:user] = "servervm"
+options[:passphrase] = "devops"
 
 set :host,        options[:host_name] || host
 set :ssh_options, options
