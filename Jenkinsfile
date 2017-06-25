@@ -1,6 +1,6 @@
 #!groovy
 
-node (‘master’){
+node {
 
    stage ‘Infraestructure Testing’
    sshagent (credentials: ['devops']){
