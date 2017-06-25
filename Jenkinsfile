@@ -6,7 +6,7 @@ node {
    sh 'sudo gem install serverspec'   
  
    sshagent (credentials: ['devops']){
-      sh 'SUDO_PASSWORD=servervm rake spec'
+      sh 'sudo SUDO_PASSWORD=servervm rake spec'
    }
 }
 
